@@ -4,6 +4,7 @@ import Header from "./components/Header.js";
 import CharacterList from "./components/CharacterList";
 import WelcomePage from './components/WelcomePage';
 import styled from "styled-components";
+import SearchForm from "./components/SearchForm.js";
 
 const MainNav = styled.div`
 
@@ -25,6 +26,9 @@ export default function App() {
         <Link to="/WelcomePage">Welcome Page</Link>
         <Link to="/">CharacterList</Link>
         </MainNav>
+
+      
+
         <Route exact path="/WelcomePage" component={WelcomePage}/>
         <Route exact path="/" component={CharacterList}/>
         

@@ -4,6 +4,7 @@ import styled from "styled-components";
 const WelcomePa = styled.div`
 display:flex;
 justify-content: center;
+background: #FFF0F5;
 
 `;
 
