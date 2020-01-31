@@ -1,12 +1,21 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import uuid from "react-uuid";
 import styled from 'styled-components';
 
 const SearchPa = styled.div`
 background: #FFF0F5;
 color: #8FBC8F;
 `;
+
+const SearchBar = styled.div`
+background: #FFF0F5;
+color: #8FBC8F;
+margin: 2%;
+display:flex;
+justify-content: center;
+
+`;
+
 export default function SearchForm() {
   const [data, setData] = useState([]);
   const [query, setQuery] = useState(" ");
@@ -26,8 +35,12 @@ export default function SearchForm() {
     setQuery(event.target.value);
   };
   return (
+    
     <section className="search-form">
+      <SearchBar>
+      
       <form className="search">
+  
         <input
           type="text"
           onChange={handleInputChange}
@@ -37,6 +50,7 @@ export default function SearchForm() {
           className="prompt search-name"
         />
       </form>
+      </SearchBar>
       <h2>
         <SearchPa>
         {data.map(data => {
