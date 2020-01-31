@@ -5,6 +5,7 @@ import CharacterList from "./components/CharacterList";
 import WelcomePage from "./components/WelcomePage";
 import styled from "styled-components";
 import SearchForm from "./components/SearchForm.js";
+import LocationsList from "./components/LocationsList.js";
 
 const MainNav = styled.div`
   display: flex;
@@ -28,11 +29,13 @@ export default function App() {
       <Header />
       <Router>
         <MainNav>
-          <StyledLink to="/WelcomePage">Welcome Page</StyledLink>
-          <StyledLink to="/">CharacterList</StyledLink>
+          <StyledLink to="/WelcomePage">Welcome </StyledLink>
+          <StyledLink to="/">Character</StyledLink>
+          <StyledLink to="/LocationList">Location</StyledLink>
         </MainNav>
         <Route exact path="/WelcomePage" component={WelcomePage} />
         <Route exact path="/" component={CharacterList} />
+        <Route exact path="/LocationList" component={LocationsList}/>
       </Router>
     </main>
   );
