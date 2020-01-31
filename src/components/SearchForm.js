@@ -3,8 +3,9 @@ import axios from "axios";
 import styled from 'styled-components';
 
 const SearchPa = styled.div`
-background: #FFF0F5;
+border: 2px solid #FFF0F5;
 color: #8FBC8F;
+padding: 2%;
 `;
 
 const SearchBar = styled.div`
@@ -13,7 +14,19 @@ color: #8FBC8F;
 margin: 2%;
 display:flex;
 justify-content: center;
-
+padding: 2%;
+`;
+const NavPa = styled.nav`
+color: #8FBC8F;
+`;
+const Input = styled.input`
+color: palevioletred;
+font-size: 1em;
+border: 2px solid palevioletred;
+border-radius: 3px;
+`;
+const Label=styled.label`
+color: palevioletred;
 `;
 
 export default function SearchForm() {
@@ -38,10 +51,10 @@ export default function SearchForm() {
     
     <section className="search-form">
       <SearchBar>
-      
+      {/* <p>Search</p> */}
       <form className="search">
-  
-        <input
+  <Label htmlFor="name"> Search: </Label>
+        <Input
           type="text"
           onChange={handleInputChange}
           value={query}
@@ -49,6 +62,7 @@ export default function SearchForm() {
           placeholder="Search by Name"
           className="prompt search-name"
         />
+       
       </form>
       </SearchBar>
       <h2>
@@ -56,10 +70,12 @@ export default function SearchForm() {
         {data.map(data => {
           return (
             <div>
+              <NavPa>
               <h3> {data.name}</h3>
               <h5>Status: {data.status} </h5>
               <h5>Gender: {data.gender} </h5>
               <h5>Species: {data.species} </h5>
+              </NavPa>
             </div>
           );
         })}

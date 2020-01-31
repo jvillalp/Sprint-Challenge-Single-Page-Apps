@@ -25,7 +25,7 @@ In this challenge, you will create a Single Page Application complete with Clien
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question.
 
-- [ ]  Explain benefit(s) using `client-side routing`?
+- [x]  Explain benefit(s) using `client-side routing`?
 
 > Answer: Client-side routing occurs when the router is handled interally by the Javascript that is loaded in a page. When you click on a different link, the URL changes, but you are still in the same page. Server-side routing are theh websites you see a browser, when you click on a link/URL, the browser takes you to a different site. 
 
@@ -76,7 +76,7 @@ _Display Data from a Server API_
 _Add a Router to this application using [React Router](https://reacttraining.com/react-router/web/guides/quick-start)._
 
 - [x]  Hook up the Welcome page(Home page) and a Characters page with React Router.
-- [x]  Use a styling or component library for part of or all of your application. (Pick at least 1 of: 
+- [x]  Use a styling or component library for part of or all of your application. (Pick at least 1 of 3: 
        (https://react-bootstrap.github.io/)styled-components or Reactstrap).
 
 _Add 'Search by Name' feature._
