@@ -27,7 +27,13 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ]  Explain benefit(s) using `client-side routing`?
 
-> Answer:
+> Answer: Client-side routing occurs when the router is handled interally by the Javascript that is loaded in a page. When you click on a different link, the URL changes, but you are still in the same page. Server-side routing are theh websites you see a browser, when you click on a link/URL, the browser takes you to a different site. 
+
+Benefits of client-side routing is that they are easier to use on a single page application, since you never leave the site.
+
+-No Full Page Reload required (it may take a little longer to start up, but once webpage opened, all other links should be quick to open since the webpage doesnt need to load multiple times.)
+
+-Lazy Loading (page will slowly load as client is scrolling through a page)
 
 ## Project Set Up
 
